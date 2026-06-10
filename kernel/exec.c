@@ -10,8 +10,7 @@
 static int loadseg(pde_t *, uint64, struct inode *, uint, uint);
 
 // map ELF permissions to PTE permission bits.
-int
-flags2perm(int flags)
+int flags2perm(int flags)
 {
   int perm = 0;
   if (flags & 0x1)
@@ -24,8 +23,7 @@ flags2perm(int flags)
 //
 // the implementation of the exec() system call
 //
-int
-kexec(char *path, char **argv)
+int kexec(char *path, char **argv)
 {
   char *s, *last;
   int i, off;
@@ -39,7 +37,8 @@ kexec(char *path, char **argv)
   begin_op();
 
   // Open the executable file.
-  if ((ip = namei(path)) == 0) {
+  if ((ip = namei(path)) == 0)
+  {
     end_op();
     return -1;
   }
@@ -57,7 +56,8 @@ kexec(char *path, char **argv)
     goto bad;
 
   // Load program into memory.
-  for (i = 0, off = elf.phoff; i < elf.phnum; i++, off += sizeof(ph)) {
+  for (i = 0, off = elf.phoff; i < elf.phnum; i++, off += sizeof(ph))
+  {
     if (readi(ip, 0, (uint64)&ph, off, sizeof(ph)) != sizeof(ph))
       goto bad;
     if (ph.type != ELF_PROG_LOAD)
@@ -98,7 +98,8 @@ kexec(char *path, char **argv)
 
   // Copy argument strings into new stack, remember their
   // addresses in ustack[].
-  for (argc = 0; argv[argc]; argc++) {
+  for (argc = 0; argv[argc]; argc++)
+  {
     if (argc >= MAXARG)
       goto bad;
     sp -= strlen(argv[argc]) + 1;
@@ -143,7 +144,8 @@ kexec(char *path, char **argv)
 bad:
   if (pagetable)
     proc_freepagetable(pagetable, sz);
-  if (ip) {
+  if (ip)
+  {
     iunlockput(ip);
     end_op();
   }
@@ -154,14 +156,13 @@ bad:
 // va must be page-aligned
 // and the pages from va to va+sz must already be mapped.
 // Returns 0 on success, -1 on failure.
-static int
-loadseg(pagetable_t pagetable, uint64 va, struct inode *ip, uint offset,
-        uint sz)
+static int loadseg(pagetable_t pagetable, uint64 va, struct inode *ip, uint offset,uint sz)
 {
   uint i, n;
   uint64 pa;
 
-  for (i = 0; i < sz; i += PGSIZE) {
+  for (i = 0; i < sz; i += PGSIZE)
+  {
     pa = walkaddr(pagetable, va + i);
     if (pa == 0)
       panic("loadseg: address should exist");
