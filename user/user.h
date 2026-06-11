@@ -26,7 +26,7 @@ int pause(int);
 int uptime(void);
 
 // write "TEST" function
-int test(void);
+int test();
 
 // ulib.c
 int stat(const char *, struct stat *);

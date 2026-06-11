@@ -156,6 +156,7 @@ UPROGS=\
 	$U/_logstress\
 	$U/_forphan\
 	$U/_dorphan\
+	$U/_test\
 
 
 # I delete the normal README, so ı make another README.md.
