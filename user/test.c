@@ -1,5 +1,6 @@
 /*
     When the user type TEST, console type TEST: OK!
+    and calculate test!
     
 */
 

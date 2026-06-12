@@ -157,6 +157,7 @@ UPROGS=\
 	$U/_forphan\
 	$U/_dorphan\
 	$U/_test\
+	$U/_calc\
 
 
 # I delete the normal README, so ı make another README.md.

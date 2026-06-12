@@ -28,6 +28,11 @@ int uptime(void);
 // write "TEST" function
 int test();
 
+// The calculation will be performed here,
+// and only on the user's end.
+int calculator(void);
+int add(int A, int B);
+
 // ulib.c
 int stat(const char *, struct stat *);
 char *strcpy(char *, const char *);
@@ -35,11 +40,11 @@ void *memmove(void *, const void *, int);
 char *strchr(const char *, char c);
 int strcmp(const char *, const char *);
 char *gets(char *, int max);
-uint strlen(const char *);
-void *memset(void *, int, uint);
+uint strlen(const char *); // uint
+void *memset(void *, int,uint); // uint
 int atoi(const char *);
-int memcmp(const void *, const void *, uint);
-void *memcpy(void *, const void *, uint);
+int memcmp(const void *, const void *, uint); // uint
+void *memcpy(void *, const void *, uint); // uint
 char *sbrk(int);
 char *sbrklazy(int);
 
@@ -48,5 +53,5 @@ void fprintf(int, const char *, ...) __attribute__((format(printf, 2, 3)));
 void printf(const char *, ...) __attribute__((format(printf, 1, 2)));
 
 // umalloc.c
-void *malloc(uint);
+void *malloc(uint); // uint
 void free(void *);
