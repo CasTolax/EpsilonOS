@@ -31,7 +31,12 @@ int test();
 // The calculation will be performed here,
 // and only on the user's end.
 int calculator(void);
+int readint(void); // one by one read the variable
 int add(int A, int B);
+int sub(int A,int B);
+int mul(int A, int B);
+int div(int A, int B);
+int mod(int A, int B);
 
 // ulib.c
 int stat(const char *, struct stat *);
