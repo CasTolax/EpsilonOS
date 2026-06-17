@@ -25,6 +25,9 @@ char *sys_sbrk(int, int);
 int pause(int);
 int uptime(void);
 
+// uptime controle
+int uptime_controle(void);
+
 // write "TEST" function
 int test();
 
