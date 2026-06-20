@@ -16,8 +16,9 @@
   * it will be 0. It's simple, and the way it works is simple too.
  */
 
-#define ENABLE_1 1;   // when calculate is enable == 1
-#define DISABLE_0 0;  // when also calculate is disable == 0
+#define ENABLE 1   // when calculate is enable == 1
+
+#define DISABLE 0  // when also calculate is disable == 0
 
 typedef struct time_data_t
 {
@@ -39,6 +40,7 @@ int uptime_controle(void)
 
   printf("UPTIME = \n");
   printf("%d : %d : %d\n",T.HOUR,T.MINUTE,T.SECOND);
+  printf("ENABLE_CALCULATING, %d\n",ENABLE);
   exit(0);
 }
 
