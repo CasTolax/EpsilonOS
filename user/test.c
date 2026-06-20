@@ -1,18 +1,19 @@
 /*
     When the user type TEST, console type TEST: OK!
     and calculate test!
-    
+
 */
 
 #include "kernel/types.h"
+#include "kernel/bool.h"
 #include "kernel/stat.h"
-#include "user.h" 
+#include "user.h"
 
 // calculate test variables
 struct data_d{
  int A;
  int B;
- int result; 
+ int result;
 };
 struct data_d d;
 
@@ -31,7 +32,12 @@ int test(void)
   d.result = d.A + d.B;
   printf("result calculate = %d\n ",d.result);
 
-  printf("TEST OK!\n");  
+  printf("TEST OK!\n");
+
+  printf("bool test\n");
+  int my_bool = false;
+  printf("bool controle = %d\n ",my_bool);
+  my_bool = true;
+  printf("bool controle = %d\n ",my_bool);
   exit(0);
 }
-
