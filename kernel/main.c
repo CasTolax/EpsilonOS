@@ -3,6 +3,7 @@
 #include "memlayout.h"
 #include "riscv.h"
 #include "defs.h"
+#include "color.h"
 
 volatile static int started = 0;
 
@@ -13,8 +14,8 @@ void main()
     consoleinit();
     printfinit();
     printf("\n");
-    printf("Kernel is almost ready...\n");
-    printf("Epsilon kernel is booting...\n");
+    printf(BOLD "Kernel is almost ready...\n" RESET "\n"); // have a color
+    printf(BOLD "Epsilon kernel is booting...\n" RESET "\n"); // also have a color
     printf("\n");
     kinit();            // physical page allocator
     kvminit();          // create kernel page table

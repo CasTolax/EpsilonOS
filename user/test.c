@@ -7,7 +7,10 @@
 #include "kernel/types.h"
 #include "kernel/bool.h"
 #include "kernel/stat.h"
+#include "kernel/color.h"
 #include "user.h"
+
+int cpt(void); // Color Print Test
 
 // calculate test variables
 struct data_d{
@@ -20,8 +23,10 @@ struct data_d d;
 int main(int arg, char *argv[])
 {
   test();
+  cpt();
   exit(0);
 }
+
 
 int test(void)
 {
@@ -39,5 +44,18 @@ int test(void)
   printf("bool controle = %d\n ",my_bool);
   my_bool = true;
   printf("bool controle = %d\n ",my_bool);
-  exit(0);
+  return 0;
+}
+int cpt(void)
+{
+  printf(RED      "TEST" RESET "\n");
+  printf(BLUE     "TEST" RESET "\n");
+  printf(MAGENTA  "TEST" RESET "\n");
+  printf(BOLD     "TEST" RESET "\n");
+
+  printf(BRIGHT_MAGENTA     "TEST" RESET "\n");
+  printf(BRIGHT_BLUE     "TEST" RESET "\n");
+  printf(BRIGHT_RED     "TEST" RESET "\n");
+  printf(BRIGHT_YELLOW     "TEST" RESET "\n");
+  return 0;
 }
