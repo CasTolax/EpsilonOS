@@ -14,3 +14,10 @@ It has already been written in a simple manner, and as I mentioned,
  it was developed for educational purposes. It currently supports up to 4096 MB.
  Additional features will be added based on the system’s specifications.
 
+ ## ABOUT ANSI SUPPORT
+
+Make sure your terminal supports ANSI... The output is color-coded, 
+and error messages will typically appear in red text. If ANSI 
+support is not available,the output will be displayed in 
+the default color.
+
