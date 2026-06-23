@@ -7,6 +7,7 @@
 
 #include "kernel/types.h"
 #include "kernel/stat.h"
+#include "kernel/color.h"
 #include "user.h"
 
 struct data_of_var_d {
@@ -18,7 +19,7 @@ struct data_of_var_d d;
 // Operations
 // add,sub,div,mul,mod
 int add(int A, int B)
-{ 
+{
   return A + B;
   exit(0);
 }
@@ -42,7 +43,7 @@ int div(int A, int B)
   // not process div. So? user not will input zero! (I think...).
   if(A == 0 || B == 0)
   {
-    printf("You can not divide with zero!(0)");
+    printf(RED "You can not divide with zero!(0) \n" RESET "\n");
   }
   else
   {
@@ -59,7 +60,7 @@ int readint(void)
 
   if(n <= 0)
     return 0;
-  
+
   buf[n] = '\0';
   return atoi(buf);
   exit(0);
@@ -73,8 +74,8 @@ int readint(void)
 // this is actually a bit difficult—though not impossible.
 // When writing code using this function, pay close attention to the code’s readability!
 int calculator(void)
-{ 
-  // the data 
+{
+  // the data
   struct data_of_var_d d;
 
   int A;
@@ -85,7 +86,7 @@ int calculator(void)
 
   A = d.A;
   B = d.B;
-  
+
   // user select the operations
   int user;
 
@@ -103,7 +104,7 @@ int calculator(void)
 
     printf("result = %d\n",add(A,B));
     break;
-    
+
   case 2:
      printf("A = ");
      A = readint();
@@ -113,7 +114,7 @@ int calculator(void)
 
      printf("result = %d\n", sub(A,B));
      break;
-     
+
   case 3:
      printf("A = ");
      A = readint();
@@ -123,7 +124,7 @@ int calculator(void)
 
      printf("result = %d\n",mul(A,B));
      break;
-     
+
   case 4:
      printf("A = ");
      A = readint();
@@ -135,18 +136,15 @@ int calculator(void)
      break;
 
   default:
-    printf("You can select only 1-2-3-4 !");
-    break;  
+    printf(RED "You can select only 1-2-3-4 !\n" RESET "\n");
+    break;
   }
-  
+
   exit(0);
 }
 
-
-
 int main(int arg, char *argv[])
 {
-  
   calculator();
   exit(0);
 }

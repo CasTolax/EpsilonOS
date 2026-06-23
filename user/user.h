@@ -31,10 +31,12 @@ int uptime_controle(void);
 // write "TEST" function
 int test();
 
+// one by one read the variable
+int readint(void);
+
 // The calculation will be performed here,
 // and only on the user's end.
 int calculator(void);
-int readint(void); // one by one read the variable
 int add(int A, int B);
 int sub(int A,int B);
 int mul(int A, int B);
