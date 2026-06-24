@@ -10,16 +10,12 @@
 #include "kernel/stat.h"
 #include "kernel/color.h"
 #include "kernel/bool.h"
-#include "kernel/keyboard.h"
 #include "user.h"
-
-
-void color_test(void);
 
 
 int main(int argc, char *argv[])
 {
-
+  color_test();
   printf("Working!\n");
   exit(0);
 }

@@ -61,9 +61,6 @@ void*           kalloc(void);
 void            kfree(void *);
 void            kinit(void);
 
-// Keyboard.c
-void            keyboard_ctrl(void);
-
 // log.c
 void            initlog(int, struct superblock*);
 void            log_write(struct buf*);
