@@ -35,7 +35,9 @@ int test();
 int readint(void);
 
 // color tests
+void print_color(void);
 void color_test(void);
+void screen_test(void);
 
 // The calculation will be performed here,
 // and only on the user's end.
