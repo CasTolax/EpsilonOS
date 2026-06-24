@@ -1,28 +1,38 @@
 #include "kernel/types.h"
 #include "kernel/fcntl.h"
+#include "kernel/color.h"
 #include "user/user.h"
+
+/*
+ * The cat functions.
+ *
+ * when type cat and then you click space, there is no input.
+ * this is the correct input but, you some type word or example you write
+ * "asdws", The output is displayed twice.
+ * I dont now where is the bug.
+ *
+ */
 
 char buf[512];
 
-void
-cat(int fd)
+void cat(int fd)
 {
   int n;
 
   while ((n = read(fd, buf, sizeof(buf))) > 0) {
     if (write(1, buf, n) != n) {
-      fprintf(2,"cat: write error\n");
+      fprintf(2, "cat: write error\n");
       exit(1);
     }
   }
+
   if (n < 0) {
-    fprintf(2,"cat: read error\n");
+    fprintf(2, "cat: read error\n");
     exit(1);
   }
 }
 
-int
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
   int fd, i;
 
