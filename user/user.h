@@ -34,6 +34,9 @@ int test();
 // one by one read the variable
 int readint(void);
 
+// color tests
+void color_test(void);
+
 // The calculation will be performed here,
 // and only on the user's end.
 int calculator(void);
