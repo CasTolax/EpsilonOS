@@ -70,6 +70,7 @@ void screen_test(void)
       I'm creating something that anyone can understand and easily
       implement. That's fine anyway!
   */
+
   data.RED_SCREEN   = 0;
   data.BLUE_SCREEN  = 0;
   data.GREEN_SCREEN = 0;

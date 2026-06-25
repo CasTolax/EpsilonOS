@@ -34,6 +34,9 @@ int test();
 // one by one read the variable
 int readint(void);
 
+// Random functions test
+void random_test (void);
+
 // color tests
 void print_color(void);
 void color_test(void);

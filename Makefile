@@ -160,6 +160,7 @@ UPROGS=\
 	$U/_calc\
 	$U/_uptime\
 	$U/_coloring_test\
+	$U/_random\
 
 
 # I delete the normal README, so ı make another README.md.
