@@ -64,6 +64,12 @@ void color_test(void)
 
 void screen_test(void)
 {
+
+  /*
+      This is a very simple test; since it's just a hobby project,
+      I'm creating something that anyone can understand and easily
+      implement. That's fine anyway!
+  */
   data.RED_SCREEN   = 0;
   data.BLUE_SCREEN  = 0;
   data.GREEN_SCREEN = 0;
@@ -73,21 +79,31 @@ void screen_test(void)
   for(int i = 0; i < 3; i++)
   {
     for(int j = 0; j < 3; j++)
-      printf(RED "█" RESET);
+    {
+      printf(RED "█" RESET );
+      printf(RED "$" RESET );
+    }
   }
 
   // GREEN
   for(int i = 0; i < 3; i++)
   {
     for(int j = 0; j < 3; j++)
+    {
       printf(GREEN "█" RESET);
+      printf(GREEN "$" RESET);
+    }
   }
 
   // BLUE
   for(int i = 0; i < 3; i++)
   {
     for(int j = 0; j < 3; j++)
+    {
       printf(BLUE "█" RESET);
+      printf(BLUE "$" RESET);
+    }
+
   }
 
   // debug
