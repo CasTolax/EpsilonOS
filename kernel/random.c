@@ -14,52 +14,21 @@
 
 #include "types.h"
 #include "random.h"
-#include "stat.h"
-#include "proc.h"
 
-uint ticks;
+static uint64 seed = 1;
 
-// variables and datas
-typedef struct
+void srand(uint64 s)
 {
-  int getpid_num;
-  int getticks_num;
-
-}random_data;
-
-int random(void)
-{
-  int x;
-  int y;
-  int a = 1073094;
-  int b = 5028523;
-  int calc;
-  random_data data;
-
-  // reset
-  data.getpid_num = 0;
-  data.getticks_num = 0;
-
-  data.getticks_num = ticks;
-  data.getpid_num = myproc()->pid;
-
-  x = data.getpid_num;
-  y = data.getticks_num;
-
-  calc = (a * b * x * y);
-
-  return calc;
-
+  seed = s;
 }
 
-int randUltra(void)
+uint64 random(void)
 {
+  seed ^= seed >> 23;
+  seed ^= seed << 12;
+  seed ^= seed >> 42;
+  seed ^= seed << 31;
 
-}
-
-int rand_main(void)
-{
-  random();
-  randUltra();
-  return 0;
+  seed = seed * 28348256391263 * 1347 + 1;
+  return seed;
 }

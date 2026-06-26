@@ -28,7 +28,8 @@ OBJS = \
   $K/sysfile.o \
   $K/kernelvec.o \
   $K/plic.o \
-  $K/virtio_disk.o
+  $K/virtio_disk.o \
+  $K/random.o\
 
 # By CasTolax 2026
 # Print OS OK
@@ -160,7 +161,7 @@ UPROGS=\
 	$U/_calc\
 	$U/_uptime\
 	$U/_coloring_test\
-	$U/_random\
+	$U/_rand\
 
 
 # I delete the normal README, so ı make another README.md.

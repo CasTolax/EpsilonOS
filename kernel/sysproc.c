@@ -6,6 +6,12 @@
 #include "spinlock.h"
 #include "proc.h"
 #include "vm.h"
+#include "random.h"
+
+uint64 sys_random(void)
+{
+  return random();
+}
 
 uint64
 sys_exit(void)

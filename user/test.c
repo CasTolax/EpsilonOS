@@ -8,6 +8,7 @@
 #include "kernel/bool.h"
 #include "kernel/stat.h"
 #include "kernel/color.h"
+#include "kernel/random.h"
 #include "user.h"
 
 int cpt(void); // Color Print Test

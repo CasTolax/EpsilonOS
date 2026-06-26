@@ -7,9 +7,7 @@
 #define RANDOM_H
 
 //functions
-int random(void);
-int randUltra(void);
-int rand_main(void); // the main function is here
-
+void srand(uint64 s);
+uint64 random(void);
 
 #endif

@@ -31,11 +31,11 @@ int uptime_controle(void);
 // write "TEST" function
 int test();
 
+// random function
+int rand(void);
+
 // one by one read the variable
 int readint(void);
-
-// Random functions test
-void random_test (void);
 
 // color tests
 void print_color(void);
