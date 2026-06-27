@@ -30,6 +30,7 @@ OBJS = \
   $K/plic.o \
   $K/virtio_disk.o \
   $K/random.o\
+  $K/usage.o\
 
 # By CasTolax 2026
 # Print OS OK
@@ -162,6 +163,7 @@ UPROGS=\
 	$U/_uptime\
 	$U/_coloring_test\
 	$U/_rand\
+	$U/_usage\
 
 
 # I delete the normal README, so ı make another README.md.

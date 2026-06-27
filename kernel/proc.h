@@ -20,6 +20,8 @@ struct context {
 
 // Per-CPU state.
 struct cpu {
+  uint getbusyticks;      // get the busy ticks
+  uint getidleticks;      // get idle time of ticks
   struct proc *proc;      // The process running on this cpu, or null.
   struct context context; // swtch() here to enter scheduler().
   int noff;               // Depth of push_off() nesting.

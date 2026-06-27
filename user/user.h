@@ -37,6 +37,10 @@ int rand(void);
 // one by one read the variable
 int readint(void);
 
+// CPU usage
+int user_usage(void);
+int cusage_ctrl(void); // CPU Usage Control
+
 // color tests
 void print_color(void);
 void color_test(void);

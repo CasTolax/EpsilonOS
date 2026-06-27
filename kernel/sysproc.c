@@ -7,10 +7,16 @@
 #include "proc.h"
 #include "vm.h"
 #include "random.h"
+#include "usage.h"
 
 uint64 sys_random(void)
 {
   return random();
+}
+
+uint64 sys_usage(void)
+{
+  return usage();
 }
 
 uint64
