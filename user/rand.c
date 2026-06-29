@@ -12,7 +12,11 @@
 int rand(void)
 {
   int x = random() & 0x7fffffff; // & 0x7fffffff: means, no negative numbers! -1170758690
+  // We can also use like that.
+  // int y = (random() % 6) + 1;
+  // int z = (random() % 3) + 1;
   printf("random number = %d\n",x);
+
   return 0;
 }
 
