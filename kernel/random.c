@@ -17,17 +17,14 @@
 
 static uint64 seed = 1;
 
-void srand(uint64 s)
-{
-  seed = s;
-}
-
 uint64 random(void)
 {
+
   seed ^= seed >> 23;
   seed ^= seed << 12;
   seed ^= seed >> 42;
   seed ^= seed << 31;
+  seed ^= seed << 53;
 
   seed = seed * 28348256391263 * 1347 + 1;
   return seed;

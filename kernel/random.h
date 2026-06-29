@@ -7,7 +7,6 @@
 #define RANDOM_H
 
 //functions
-void srand(uint64 s);
 uint64 random(void);
 
 #endif
