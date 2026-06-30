@@ -7,6 +7,8 @@
 #include "defs.h"
 #include "trap.h"
 
+extern uint ticks;
+
 struct spinlock tickslock;
 // here is the uint ticks; (trap.h)
 

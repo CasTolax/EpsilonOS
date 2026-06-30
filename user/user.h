@@ -37,6 +37,9 @@ int rand(void);
 // one by one read the variable
 int readint(void);
 
+// input the pi number
+int test_pi(void);
+
 // CPU usage
 int user_usage(void);
 int cusage_ctrl(void); // CPU Usage Control

@@ -1,13 +1,13 @@
-/*
-  * The Pi number, The universe key and numbers.
-  * The univers starts with this numbers already.
 
-  * By CasTolax 2026
+/*
+    functions are here.
 */
 
 #ifndef PI_H
 #define PI_H
 
-static int pi (void); // just print pi numbers.
+extern const char pi_number[102];
+
+static int pi (void);
 
 #endif
