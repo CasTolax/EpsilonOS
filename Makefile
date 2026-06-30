@@ -164,6 +164,7 @@ UPROGS=\
 	$U/_coloring_test\
 	$U/_rand\
 	$U/_usage\
+	$U/_pi\
 
 
 # I delete the normal README, so ı make another README.md.
