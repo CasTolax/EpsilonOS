@@ -5,9 +5,10 @@
 #include "spinlock.h"
 #include "proc.h"
 #include "defs.h"
+#include "trap.h"
 
 struct spinlock tickslock;
-uint ticks;
+// here is the uint ticks; (trap.h)
 
 extern char trampoline[], uservec[];
 

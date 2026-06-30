@@ -14,12 +14,16 @@
 
 #include "types.h"
 #include "random.h"
+#include "trap.h"
 
 static uint64 seed = 1;
+uint ticks;
 
 uint64 random(void)
 {
 
+  seed = ticks;
+    
   seed ^= seed >> 23;
   seed ^= seed << 12;
   seed ^= seed >> 42;
