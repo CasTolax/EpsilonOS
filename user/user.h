@@ -58,6 +58,11 @@ int mul(int A, int B);
 int div(int A, int B);
 int mod(int A, int B);
 
+// Arcanum 
+int dominus(void);
+int usor(void);
+int tiro(void);
+
 // ulib.c
 int stat(const char *, struct stat *);
 char *strcpy(char *, const char *);

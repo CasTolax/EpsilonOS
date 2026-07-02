@@ -31,6 +31,9 @@ OBJS = \
   $K/virtio_disk.o \
   $K/random.o\
   $K/usage.o\
+  $K/dominus.o\
+  $K/tiro.o \
+  $K/usor.o \
 
 # By CasTolax 2026
 # Print OS OK
@@ -165,6 +168,7 @@ UPROGS=\
 	$U/_rand\
 	$U/_usage\
 	$U/_pi\
+	$U/_arcanum\
 
 
 # I delete the normal README, so ı make another README.md.

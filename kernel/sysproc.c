@@ -9,6 +9,21 @@
 #include "random.h"
 #include "usage.h"
 
+uint64 sys_tiro(void)
+{
+  return 0;
+}
+
+uint64 sys_usor(void)
+{
+  return usor();
+}
+
+uint64 sys_dominus(void)
+{
+  return dominus(); 
+}
+
 uint64 sys_random(void)
 {
   return random();
