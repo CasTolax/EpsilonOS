@@ -1,9 +1,8 @@
 The Epsilon(based xv6) software is:
 
 I would like to state that this software is for hobby purposes ONLY and is NOT INTENDED FOR ANY COMMERCIAL PURPOSE.
- I am copying and modifying an open-source software project on my own. 
-IT IS NOT INTENDED FOR ANY COMMERCIAL, FINANCIAL, OR OTHER PURPOSES.
-CasTolax 2026
+I am copying and modifying an Open-Source software project on my own.
+IT IS NOT INTENTED FOR ANY COMMERCIAL, FINANCIAL, OR OTHER PURPOSES.
 
 Copyright (c) 2006-2024 Frans Kaashoek, Robert Morris, Russ Cox,
                         Massachusetts Institute of Technology

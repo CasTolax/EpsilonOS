@@ -1,6 +1,9 @@
 The Epsilon operating system is software based on the Xv6 operating system.
+Please check the license,
+https://github.com/CasTolax/EpsilonOS/blob/main/LICENSE
 
 ### INFORMATION FOR USERS
+
 Due to its simple structure and straightforward operations,
 this operating system is one of the most suitable systems for educational purposes.
 However, it can only be run on QEMU, and my goal is to develop a system that can be

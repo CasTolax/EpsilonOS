@@ -27,7 +27,7 @@ int cusage_ctrl(void)
   int x;
   x = usage();
 
-  if(x == 50)
+  if(x >= 50)
     printf("Need calm down\n");
   else
    printf("normal CPU usage\n");
