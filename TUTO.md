@@ -1,12 +1,12 @@
 ### How to use commads in EpsilonOS? (xv6-riscv)
 
- cat,    use: cat <file name>   -- Shows what is contained in files or documents.
+ peek,   use: peek <file name>   -- Shows what is contained in files or documents.
  echo,   use: echo Hello world  -- Print console.
  rm,     use: rm <file name>    -- Remove file or anything.
  mkdir,  use: mkdir <file name> -- Creates a file.
- ls,     use: ls                -- list of files
+ list,     use: list                -- list of files
 
- ln,     use: ln <file name> <file name> -- links files example, a to b are the same. when cat a or b, the output
+ link,     use: ln <file name> <file name> -- links files example, a to b are the same. when cat a or b, the output
  same with both files.
 
  grep,   use: grep pattern [file ...] -- examle, we have a file 'apple.txt'. And when user use grep just like this:

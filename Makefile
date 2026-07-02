@@ -139,14 +139,14 @@ mkfs/mkfs: mkfs/mkfs.c $K/fs.h $K/param.h
 .PRECIOUS: %.o
 
 UPROGS=\
-	$U/_cat\
+	$U/_peek\
 	$U/_echo\
 	$U/_forktest\
 	$U/_grep\
 	$U/_init\
 	$U/_kill\
-	$U/_ln\
-	$U/_ls\
+	$U/_link\
+	$U/_list\
 	$U/_mkdir\
 	$U/_rm\
 	$U/_sh\
