@@ -6,7 +6,7 @@
  mkdir,  use: mkdir <file name> -- Creates a file.
  list,     use: list                -- list of files
 
- link,     use: ln <file name> <file name> -- links files example, a to b are the same. when cat a or b, the output
+ link,     use: link <file name> <file name> -- links files example, a to b are the same. when cat a or b, the output
  same with both files.
 
  grep,   use: grep pattern [file ...] -- examle, we have a file 'apple.txt'. And when user use grep just like this:

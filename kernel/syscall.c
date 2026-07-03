@@ -101,8 +101,8 @@ extern uint64 sys_usage(void);  // new syscall: CPU usage
 extern uint64 sys_dominus(void);
 extern uint64 sys_tiro(void);
 extern uint64 sys_usor(void);
+extern uint64 sys_whoami(void);
 
-// An array mapping syscall numbers from syscall.h
 // to the function that handles the system call.
 static uint64 (*syscalls[])(void) = {
   // clang-format off
@@ -132,7 +132,8 @@ static uint64 (*syscalls[])(void) = {
   [SYS_dominus] sys_dominus,
   [SYS_usor]    sys_usor,
   [SYS_tiro]    sys_tiro,
-  
+  [SYS_whoami]  sys_whoami,
+
   // clang-format on
 };
 

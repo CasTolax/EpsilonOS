@@ -34,6 +34,7 @@ OBJS = \
   $K/dominus.o\
   $K/tiro.o \
   $K/usor.o \
+  $K/whoami.o\
 
 # By CasTolax 2026
 # Print OS OK
@@ -169,6 +170,8 @@ UPROGS=\
 	$U/_usage\
 	$U/_pi\
 	$U/_arcanum\
+	$U/_whoamiU\
+	$U/_userdata\
 
 
 # I delete the normal README, so ı make another README.md.
