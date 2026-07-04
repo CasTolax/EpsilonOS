@@ -31,12 +31,12 @@ void ls(char *path)
   struct stat st;
 
   if ((fd = open(path, O_RDONLY)) < 0) {
-    fprintf(2, "ls: cannot open %s\n", path);
+    fprintf(2, "list: cannot open %s\n", path);
     return;
   }
 
   if (fstat(fd, &st) < 0) {
-    fprintf(2, "ls: cannot stat %s\n", path);
+    fprintf(2, "list: cannot stat %s\n", path);
     close(fd);
     return;
   }
@@ -49,7 +49,7 @@ void ls(char *path)
 
   case T_DIR:
     if (strlen(path) + 1 + DIRSIZ + 1 > sizeof buf) {
-      printf("ls: path too long\n");
+      printf("list: path too long\n");
       break;
     }
     strcpy(buf, path);
@@ -61,7 +61,7 @@ void ls(char *path)
       memmove(p, de.name, DIRSIZ);
       p[DIRSIZ] = 0;
       if (stat(buf, &st) < 0) {
-        printf("ls: cannot stat %s\n", buf);
+        printf("list: cannot stat %s\n", buf);
         continue;
       }
       printf("%s %d %d %d\n", fmtname(buf), st.type, st.ino, (int)st.size);

@@ -4,9 +4,9 @@
 #include "user/user.h"
 
 /*
- * The cat functions.
+ * The peek functions.
  *
- * when type cat and then you click space, there is no input.
+ * when type peek and then you click space, there is no input.
  * this is the correct input but, you some type word or example you write
  * "asdws", The output is displayed twice.
  * I dont now where is the bug.
@@ -15,19 +15,19 @@
 
 char buf[512];
 
-void cat(int fd)
+void peek(int fd)
 {
   int n;
 
   while ((n = read(fd, buf, sizeof(buf))) > 0) {
     if (write(1, buf, n) != n) {
-      fprintf(2, "cat: write error\n");
+      fprintf(2, "peek: write error\n");
       exit(1);
     }
   }
 
   if (n < 0) {
-    fprintf(2, "cat: read error\n");
+    fprintf(2, "peek: read error\n");
     exit(1);
   }
 }
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
   int fd, i;
 
   if (argc <= 1) {
-    cat(0);
+    peek(0);
     exit(0);
   }
 
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
       fprintf(2, "cat: cannot open %s\n", argv[i]);
       exit(1);
     }
-    cat(fd);
+    peek(fd);
     close(fd);
   }
   exit(0);

@@ -11,7 +11,7 @@ char username[8];
 
 void userdata(void)
 {
-  printf("You have must be Tiro! \n");
+
   printf("enter the user name and password.\n");
 
   int n;
