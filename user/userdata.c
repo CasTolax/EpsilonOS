@@ -3,10 +3,11 @@
  *
  */
 
-
 #include "kernel/types.h"
-#include "kernel/whoami.h"
 #include "user.h"
+
+int password[8];
+char username[8];
 
 void userdata(void)
 {
@@ -14,8 +15,6 @@ void userdata(void)
   printf("enter the user name and password.\n");
 
   int n;
-  char password[8]; // user password
-  char username[8]; // user name
 
   read(0,username,sizeof(username));
 
@@ -34,9 +33,10 @@ void userdata(void)
     password[n] = '\0';
     int value = 0;
     for(int i = 0; i < n; i++) {
-      if (password[i] < '0' || password[i] > '9')
+      if (password[i] < '0' || password[i] > '9') // read the user input
         continue;
       value = value * 10 + (password[i] - '0');
+
     }
     printf("Password = %d\n", value);
 

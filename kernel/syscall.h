@@ -22,7 +22,3 @@
 #define SYS_close  21
 #define SYS_random 22
 #define SYS_usage  23
-#define SYS_dominus 24
-#define SYS_tiro    25
-#define SYS_usor    26
-#define SYS_whoami  27

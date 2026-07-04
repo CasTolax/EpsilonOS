@@ -10,11 +10,6 @@ struct sleeplock;
 struct stat;
 struct superblock;
 
-// arcanum
-uint64 dominus(void);
-uint64 usor(void);
-uint64 tiro(void);
-
 
 // bio.c
 void            binit(void);

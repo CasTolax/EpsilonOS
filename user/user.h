@@ -58,14 +58,14 @@ int mul(int A, int B);
 int div(int A, int B);
 int mod(int A, int B);
 
-// Arcanum
-int dominus(void);
-int usor(void);
-int tiro(void);
-int whoamiU(void);
+// // Arcanum
+// int dominusU(void);
+// int usorU(void);
+// int tiroU(void);
+// int whoamiU(void);
 
 // user data
-void userdata(void);
+// void userdata(void);
 
 // ulib.c
 int stat(const char *, struct stat *);

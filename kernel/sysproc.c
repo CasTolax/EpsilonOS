@@ -8,27 +8,8 @@
 #include "vm.h"
 #include "random.h"
 #include "usage.h"
-#include "whoami.h"
 
-uint64 sys_whoami(void)
-{
-  return whoami();
-}
 
-uint64 sys_tiro(void)
-{
-  return tiro();
-}
-
-uint64 sys_usor(void)
-{
-  return usor();
-}
-
-uint64 sys_dominus(void)
-{
-  return dominus();
-}
 
 uint64 sys_random(void)
 {

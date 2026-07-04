@@ -44,7 +44,3 @@ entry("pause");
 entry("uptime");
 entry("random");
 entry("usage");
-entry("dominus");
-entry("tiro");
-entry("usor");
-entry("whoami");
