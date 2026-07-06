@@ -44,3 +44,4 @@ entry("pause");
 entry("uptime");
 entry("random");
 entry("usage");
+entry("arcanum");

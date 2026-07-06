@@ -31,6 +31,7 @@ OBJS = \
   $K/virtio_disk.o \
   $K/random.o\
   $K/usage.o\
+  $K/arcanum.o\
 
 # By CasTolax 2026
 # Print OS OK

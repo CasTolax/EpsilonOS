@@ -98,7 +98,7 @@ extern uint64 sys_mkdir(void);
 extern uint64 sys_close(void);
 extern uint64 sys_random(void); // new syscall: random number
 extern uint64 sys_usage(void);  // new syscall: CPU usage
-
+extern uint64 sys_arcanum(void);
 
 // to the function that handles the system call.
 static uint64 (*syscalls[])(void) = {
@@ -126,8 +126,7 @@ static uint64 (*syscalls[])(void) = {
   [SYS_close]   sys_close,
   [SYS_random]  sys_random,
   [SYS_usage]   sys_usage,
-
-
+  [SYS_arcanum] sys_arcanum, 
   // clang-format on
 };
 

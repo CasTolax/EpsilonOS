@@ -29,13 +29,21 @@ void userdata(void)
   // Thanks, Claude AI but, WHAT THE HELL IS THIS?
   // WHY THE CODES READ SO DIFFICULT?
   // ...
-  n = read(0, password, sizeof(password) - 1); // get the input from user
+    n = read(0, password, sizeof(password) - 1); // get the input from user
+    
     password[n] = '\0';
+    
     int value = 0;
+    
     for(int i = 0; i < n; i++) {
+
+      printf("debug = %d\n",password[n]);  
       if (password[i] < '0' || password[i] > '9') // read the user input
         continue;
-      value = value * 10 + (password[i] - '0');
+      
+     value = value * 10 + (password[i] - '0'); 
+
+
 
     }
     printf("Password = %d\n", value);

@@ -9,7 +9,10 @@
 #include "random.h"
 #include "usage.h"
 
-
+uint64 sys_arcanum(void)
+{
+  return arcanum();
+}
 
 uint64 sys_random(void)
 {
