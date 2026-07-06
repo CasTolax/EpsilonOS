@@ -6,7 +6,7 @@
 #include "kernel/types.h"
 #include "user.h"
 
-int password[8];
+char password[9]; // solve problem, this is need to be char not int.
 char username[8];
 
 void userdata(void)
@@ -14,7 +14,6 @@ void userdata(void)
 
   printf("enter the user name and password.\n");
 
-  int n;
 
   read(0,username,sizeof(username));
 
@@ -29,22 +28,25 @@ void userdata(void)
   // Thanks, Claude AI but, WHAT THE HELL IS THIS?
   // WHY THE CODES READ SO DIFFICULT?
   // ...
-    n = read(0, password, sizeof(password) - 1); // get the input from user
-    
+    int n = read(0, password, sizeof(password) - 1); // get the input from user
+    if(8 > n) // if user input eigth digit than bigger
+    {
+      printf("\n");
+    }
+    else{ // theoretically
+      printf("You can only enter an eight-digit number\n");
+    }
+
+    if(n < 0) n = 0; // thats safe ı think
     password[n] = '\0';
-    
+
     int value = 0;
-    
+
     for(int i = 0; i < n; i++) {
 
-      printf("debug = %d\n",password[n]);  
       if (password[i] < '0' || password[i] > '9') // read the user input
         continue;
-      
-     value = value * 10 + (password[i] - '0'); 
-
-
-
+     value = value * 10 + (password[i] - '0');
     }
     printf("Password = %d\n", value);
 
