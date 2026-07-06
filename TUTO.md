@@ -41,9 +41,15 @@ We have a kernel mode and user mode test.
  test, -- bool and other tests
 
  coloring_test, -- Test the coloring screen and words,lines...
- pi, -- give a pi number
+ pi,       -- give a pi number
+ userdata, -- Input the username and user password(Need for system,kernel,files
+ and command controls give you.)
+
+### And Others...
+
+    sh,   -- Start shell 
+    init, --  Starting Userland features. Init -> sh -> userland commands.
   
   
 
 By CasTolax 2026.
-
