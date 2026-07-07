@@ -8,10 +8,20 @@
 #include "vm.h"
 #include "random.h"
 #include "usage.h"
+#include "arcanum.h"
 
 uint64 sys_arcanum(void)
 {
-  return arcanum();
+  char username[8];
+  char password[9];
+
+  // Copy string arguments from user space to the kernel buffer
+  if (argstr(0, password, 9) < 0)
+    return -1;
+  if (argstr(1, username, 8) < 0)
+    return -1;
+
+  return arcanum(password, username);
 }
 
 uint64 sys_random(void)

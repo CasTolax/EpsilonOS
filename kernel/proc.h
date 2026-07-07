@@ -1,3 +1,5 @@
+
+
 // Saved registers for kernel context switches.
 struct context {
   uint64 ra;
@@ -84,9 +86,6 @@ enum procstate { UNUSED, USED, SLEEPING, RUNNABLE, RUNNING, ZOMBIE };
 struct proc {
   struct spinlock lock;
 
-  // please check the Arcanum.c before you change these variables.
-  int userid; // user id -> example: struct proc *p->userid = 0;
-  
   // p->lock must be held when using these:
   enum procstate state; // Process state
   void *chan;           // If non-zero, sleeping on chan

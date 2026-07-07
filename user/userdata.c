@@ -4,6 +4,7 @@
  */
 
 #include "kernel/types.h"
+#include "kernel/arcanum.h"
 #include "user.h"
 
 char password[9]; // solve problem, this is need to be char not int.
@@ -15,7 +16,11 @@ void userdata(void)
   printf("enter the user name and password.\n");
 
 
-  read(0,username,sizeof(username));
+  int m = read(0,username,sizeof(username));
+
+  // clear the buffer
+  if(m > 0 && username[m-1] == '\n')
+    username[m-1] = '\0';
 
   printf("user name = ");
   for(int i = 0; i < 8 && username[i] != '\0'; i++)
@@ -29,6 +34,13 @@ void userdata(void)
   // WHY THE CODES READ SO DIFFICULT?
   // ...
     int n = read(0, password, sizeof(password) - 1); // get the input from user
+
+    // clear the buffer for password
+    if(n > 0 && password[n-1] == '\n'){
+      password[n-1] = '\0';
+      n--;
+    }
+
     if(8 > n) // if user input eigth digit than bigger
     {
       printf("\n");
@@ -55,5 +67,6 @@ void userdata(void)
 int main(void)
 {
   userdata();
+  arcanum(password,username);
   exit(0);
 }
