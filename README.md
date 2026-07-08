@@ -1,5 +1,5 @@
 
-<img width="1080" height="1080" alt="PixelLab Studio-1783497794065" src="https://github.com/user-attachments/assets/e6de77dd-feee-498a-86d8-47ec578717f6" />
+<img width="256" height="256" alt="PixelLab Studio-1783497794065" src="https://github.com/user-attachments/assets/e6de77dd-feee-498a-86d8-47ec578717f6" />
 
 The Epsilon operating system is software based on the Xv6 operating system.
 Please check the license,
