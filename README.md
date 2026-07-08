@@ -1,3 +1,7 @@
+
+<img width="500" height="500" alt="epsilonos_logo-removebg-preview" src="https://github.com/user-attachments/assets/bd429c6f-8031-448b-8d98-06474cbcf875" />
+
+
 The Epsilon operating system is software based on the Xv6 operating system.
 Please check the license,
 https://github.com/CasTolax/EpsilonOS/blob/main/LICENSE
