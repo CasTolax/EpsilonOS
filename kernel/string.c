@@ -1,5 +1,8 @@
 #include "types.h"
 
+// refactor by CasTolax 2026
+// 'just a function'
+
 void *memset(void *dst, int c, uint n)
 {
   char *cdst = (char *)dst;
