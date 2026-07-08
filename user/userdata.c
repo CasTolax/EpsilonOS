@@ -36,6 +36,7 @@ void userdata(void)
     int n = read(0, password, sizeof(password) - 1); // get the input from user
 
     // clear the buffer for password
+    //if  don't clear the buffer, the codes rejected title upgrade
     if(n > 0 && password[n-1] == '\n'){
       password[n-1] = '\0';
       n--;
