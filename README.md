@@ -28,3 +28,9 @@ Make sure your terminal supports ANSI... The output is color-coded,
 and error messages will typically appear in red text. If ANSI 
 support is not available,the output will be displayed in 
 the default color.
+
+## documentation
+Please, also check the MIT Xv6-RISCV PDF. There a lot of information and how to work 
+this Operating System. 
+https://pdos.csail.mit.edu/6.828/2023/xv6/book-riscv-rev3.pdf
+
