@@ -1,5 +1,5 @@
+<img width="256" height="256" alt="Adsız_tasarım-removebg-preview" src="https://github.com/user-attachments/assets/06f52772-601a-4b09-9e15-efe15aff4946" />
 
-<img width="500" height="500" alt="Adsız tasarım" src="https://github.com/user-attachments/assets/b98f153d-ed5c-49a5-ac26-8172bb2acf6b" />
 
 
 The Epsilon operating system is software based on the Xv6 operating system.
