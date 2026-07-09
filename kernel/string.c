@@ -22,7 +22,7 @@ int memcmp(const void *v1, const void *v2, uint n)
   while (n-- > 0) {
     if (*s1 != *s2)
       return *s1 - *s2;
-    s1++, :while s2++;
+    s1++,s2++;
   }
 
   return 0;

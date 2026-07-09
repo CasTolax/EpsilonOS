@@ -40,7 +40,7 @@ uint64 checkid(int id)
   case 0:
     id = 0;
     printf("The title was rejected.\n\n");
-    printf("userid -> 0[Tiro]\n\n");
+    printf("userid -> 1[Tiro]\n\n");
 
     break;
   case 1:
