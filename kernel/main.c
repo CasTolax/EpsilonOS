@@ -16,6 +16,7 @@ void main()
     printf("\n");
     printf(BOLD "Kernel is almost ready...\n" RESET "\n"); // have a color
     printf(BOLD "Epsilon kernel is booting...\n" RESET "\n"); // also have a color
+    printf(RED "WARNING: PLEASE TYPE 'userdata' and input the user data!\n" RESET "\n");
     printf("\n");
     kinit();            // physical page allocator
     kvminit();          // create kernel page table

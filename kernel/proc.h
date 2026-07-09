@@ -87,6 +87,7 @@ struct proc {
   struct spinlock lock;
 
   // p->lock must be held when using these:
+  int uid;     // user id. Please check User/userdata.c and kenrnel/arcanum.c
   enum procstate state; // Process state
   void *chan;           // If non-zero, sleeping on chan
   int killed;           // If non-zero, have been killed
