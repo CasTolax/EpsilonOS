@@ -76,7 +76,8 @@ uint64 lock_system(void)
   
   printf("The system are lock. \n");
   printf("Shutdown The system! \n");
-  
+
+  // loop forever
   for(;;)
     ;
   
