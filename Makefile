@@ -173,8 +173,8 @@ UPROGS=\
 # And, compile normaly! (solved)
 #
 # new markdown append. TUTO.md
-fs.img: mkfs/mkfs README.md TUTO.md LICENSE.md  $(UPROGS)
-	mkfs/mkfs fs.img README.md TUTO.md LICENSE.md $(UPROGS)
+fs.img: mkfs/mkfs README.md TUTO.md LICENSE.md logo.txt  $(UPROGS)
+	mkfs/mkfs fs.img README.md TUTO.md LICENSE.md logo.txt $(UPROGS)
 
 -include kernel/*.d user/*.d
 
