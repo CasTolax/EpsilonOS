@@ -7,7 +7,7 @@
 #ifndef ARCANUM_H
 #define ARCANUM_H
 
-// The maximum number of attempts the user can make
+// The maximum number of attempts the user can input
 #define MAX_ATTEMPS  3
 extern int failed_attemps;
 
