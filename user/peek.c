@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 
   for (i = 1; i < argc; i++) {
     if ((fd = open(argv[i], O_RDONLY)) < 0) {
-      fprintf(2, "cat: cannot open %s\n", argv[i]);
+      fprintf(2, "peek: cannot open %s\n", argv[i]);
       exit(1);
     }
     peek(fd);
