@@ -45,3 +45,4 @@ entry("uptime");
 entry("random");
 entry("usage");
 entry("arcanum");
+entry("pagetest");

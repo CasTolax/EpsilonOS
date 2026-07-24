@@ -9,6 +9,13 @@
 #include "random.h"
 #include "usage.h"
 #include "arcanum.h"
+#include "pages.h"
+
+
+uint64 sys_pagetest(void)
+{
+  return pagetest();
+}
 
 uint64 sys_arcanum(void)
 {

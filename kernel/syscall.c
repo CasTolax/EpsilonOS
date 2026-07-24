@@ -71,7 +71,7 @@ int argstr(int n, char *buf, int max)
 {
   uint64 addr;
   argaddr(n, &addr);
-  return fetchstr(addr, buf, max);
+  return fetchstr(addr,buf,max);
 }
 
 // Prototypes for the functions that handle system calls.
@@ -99,8 +99,9 @@ extern uint64 sys_close(void);
 extern uint64 sys_random(void); // new syscall: random number
 extern uint64 sys_usage(void);  // new syscall: CPU usage
 extern uint64 sys_arcanum(void);
+extern uint64 sys_pagetest(void);
 
-// to the function that handles the system call.
+// to tne function that handles the system call.
 static uint64 (*syscalls[])(void) = {
   // clang-format off
   [SYS_fork]    sys_fork,
@@ -126,7 +127,8 @@ static uint64 (*syscalls[])(void) = {
   [SYS_close]   sys_close,
   [SYS_random]  sys_random,
   [SYS_usage]   sys_usage,
-  [SYS_arcanum] sys_arcanum, 
+  [SYS_arcanum] sys_arcanum,
+  [SYS_pagetest]   sys_pagetest,
   // clang-format on
 };
 

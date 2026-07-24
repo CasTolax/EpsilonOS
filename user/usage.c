@@ -17,7 +17,8 @@ int user_usage(void)
 {
   int x;
   x = usage();
-  printf("CPU USAGE =  %d\n",x);
+  printf("CPU USAGE: %d\n",x);
+  
   return 0;
 }
 

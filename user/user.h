@@ -58,6 +58,9 @@ int mul(int A, int B);
 int div(int A, int B);
 int mod(int A, int B);
 
+// page test for user space
+int upagetest(void);
+
 // // Arcanum
 // int dominusU(void);
 // int usorU(void);
