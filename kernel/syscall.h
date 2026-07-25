@@ -24,3 +24,4 @@
 #define SYS_usage  23
 #define SYS_arcanum 24
 #define SYS_pagetest   25
+#define SYS_hartid       26

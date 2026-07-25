@@ -33,6 +33,7 @@ OBJS = \
   $K/usage.o\
   $K/arcanum.o\
   $K/ptest.o\
+  $K/hartid.o\
 
 # By CasTolax 2026
 # Print OS OK
@@ -169,6 +170,7 @@ UPROGS=\
 	$U/_pi\
 	$U/_userdata\
 	$U/_pagetest\
+	$U/_uhartid\
 
 # I delete the normal README, so ı make another README.md.
 # And, compile normaly! (solved)

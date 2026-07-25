@@ -100,6 +100,7 @@ extern uint64 sys_random(void); // new syscall: random number
 extern uint64 sys_usage(void);  // new syscall: CPU usage
 extern uint64 sys_arcanum(void);
 extern uint64 sys_pagetest(void);
+extern uint64 sys_hartid(void);
 
 // to tne function that handles the system call.
 static uint64 (*syscalls[])(void) = {
@@ -129,6 +130,7 @@ static uint64 (*syscalls[])(void) = {
   [SYS_usage]   sys_usage,
   [SYS_arcanum] sys_arcanum,
   [SYS_pagetest]   sys_pagetest,
+  [SYS_hartid]       sys_hartid,
   // clang-format on
 };
 

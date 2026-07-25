@@ -10,7 +10,13 @@
 #include "usage.h"
 #include "arcanum.h"
 #include "pages.h"
+#include "core.h"
 
+uint64 sys_hartid(void)
+{
+  int x = d_hartid();
+  return x;
+}
 
 uint64 sys_pagetest(void)
 {

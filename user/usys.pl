@@ -46,3 +46,4 @@ entry("random");
 entry("usage");
 entry("arcanum");
 entry("pagetest");
+entry("hartid");

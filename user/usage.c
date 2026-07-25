@@ -18,7 +18,7 @@ int user_usage(void)
   int x;
   x = usage();
   printf("CPU USAGE: %d\n",x);
-  
+
   return 0;
 }
 
@@ -38,6 +38,7 @@ int cusage_ctrl(void)
 
 int main(int argc, char *argv[])
 {
+
   user_usage();
   cusage_ctrl();
   exit(0);

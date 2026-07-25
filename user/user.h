@@ -61,6 +61,9 @@ int mod(int A, int B);
 // page test for user space
 int upagetest(void);
 
+// core data for user space
+int hartid(void);
+
 // // Arcanum
 // int dominusU(void);
 // int usorU(void);
