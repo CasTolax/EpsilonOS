@@ -25,6 +25,9 @@ char *sys_sbrk(int, int);
 int pause(int);
 int uptime(void);
 
+// who am i?
+int whoamiu(void);
+
 // uptime controle
 int uptime_controle(void);
 

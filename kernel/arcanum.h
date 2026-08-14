@@ -13,6 +13,9 @@ extern int failed_attemps;
 
 // please check the Arcanum.c before you change these variables.
 extern int userid;
+// the users data example (for me)
+extern char name[8];
+extern char pass[9];
 
 uint64 checkid(int id);
 uint64 setid(void);

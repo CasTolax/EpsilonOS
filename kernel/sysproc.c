@@ -11,6 +11,12 @@
 #include "arcanum.h"
 #include "pages.h"
 #include "core.h"
+#include "whoami.h"
+
+uint64 sys_whoami(void)
+{
+  return whoami();
+}
 
 uint64 sys_hartid(void)
 {

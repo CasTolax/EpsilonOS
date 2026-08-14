@@ -25,3 +25,4 @@
 #define SYS_arcanum 24
 #define SYS_pagetest   25
 #define SYS_hartid       26
+#define SYS_whoami       27

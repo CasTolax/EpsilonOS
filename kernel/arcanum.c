@@ -41,12 +41,12 @@ uint64 checkid(int id)
   switch (id) {
 
   case 0:
-    
+
     id = 0;
     printf("The title was rejected.\n\n");
     printf("userid -> 0[Tiro]\n\n");
     cf();
-    
+
     break;
   case 1:
     id = 1;
@@ -73,14 +73,14 @@ uint64 setid(void)
 // this function lock the system forever until shutdown
 uint64 lock_system(void)
 {
-  
+
   printf("The system are lock. \n");
   printf("Shutdown The system! \n");
 
   // loop forever
   for(;;)
     ;
-  
+
   return 0;
 }
 
@@ -88,11 +88,11 @@ uint64 cf(void)
 {
   if(failed_attemps == 2)
     printf("WARNING: Last one Attemps, The system will be lock.\n");
-  
+
   if(failed_attemps == MAX_ATTEMPS)
   {
     failed_attemps++;
-    
+
     printf("Too many attemps...\n ");
     lock_system();
   }
@@ -108,7 +108,7 @@ uint64 arcanum(char password[9],char username[8])
 
   // set the default
   setid();
-  
+
    // debug userid = 1;
   if(strncmp(username, "admin", 8) == 0 && strncmp(password, "123", 9) == 0){
       userid = 1; // set the dominus

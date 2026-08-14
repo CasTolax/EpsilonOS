@@ -34,6 +34,7 @@ OBJS = \
   $K/arcanum.o\
   $K/ptest.o\
   $K/hartid.o\
+  $K/whoami.o\
 
 # By CasTolax 2026
 # Print OS OK
@@ -171,6 +172,7 @@ UPROGS=\
 	$U/_userdata\
 	$U/_pagetest\
 	$U/_uhartid\
+	$U/_whoamiu\
 
 # I delete the normal README, so ı make another README.md.
 # And, compile normaly! (solved)

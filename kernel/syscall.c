@@ -101,6 +101,7 @@ extern uint64 sys_usage(void);  // new syscall: CPU usage
 extern uint64 sys_arcanum(void);
 extern uint64 sys_pagetest(void);
 extern uint64 sys_hartid(void);
+extern uint64 sys_whoami(void);
 
 // to tne function that handles the system call.
 static uint64 (*syscalls[])(void) = {
@@ -131,6 +132,7 @@ static uint64 (*syscalls[])(void) = {
   [SYS_arcanum] sys_arcanum,
   [SYS_pagetest]   sys_pagetest,
   [SYS_hartid]       sys_hartid,
+  [SYS_whoami]       sys_whoami,
   // clang-format on
 };
 
